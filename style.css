@@ -1,0 +1,33 @@
+body{
+    background-color: #9F9F9F;
+}
+
+.container{
+    padding: 0 0;
+}
+
+.home{
+    background: var(--primary-color-10, #1A171C);
+    width: 1130px;
+    height: 2022px;
+    padding-bottom: 0px;
+    flex-direction: column;
+    align-items: center;
+
+}
+
+.homebg{
+    width: 1130px;
+    height: 2022px;
+    flex-shrink: 0;
+    position:fixed;
+    z-index: 0;
+    opacity: 0.4;
+    background: linear-gradient(180deg, rgba(0, 0, 0, 0.00) 61.98%, #1A171C 100%), url("/images/Home_bg.jpeg"), lightgray 50% / cover no-repeat;
+    filter: blur(15px);
+}
+
+.hw{
+    position:relative;
+    z-index: 1;
+}
