@@ -1,0 +1,464 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <style>
+        html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}body{line-height:1}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:before,blockquote:after,q:before,q:after{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
+    </style>
+    <style>
+        * {
+          -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
+        }
+        html,
+        body {
+          margin: 0px;
+          height: 100%;
+        }
+        /* a blue color as a generic focus style */
+        button:focus-visible {
+          outline: 2px solid #4a90e2 !important;
+          outline: -webkit-focus-ring-color auto 5px !important;
+        }
+        a {
+          text-decoration: none;
+        }
+        @import url("https://fonts.googleapis.com/css?family=Inter:500,700,600|Poppins:700");
+        
+    </style>
+    <style>
+        .desktop {
+          background-color: #5b5b5b;
+          display: flex;
+          flex-direction: row;
+          justify-content: center;
+          width: 100%;
+        }
+        
+        .desktop .div {
+          background-color: #fcfcfc;
+          border: 0px solid;
+          border-color: #000000;
+          width: 1508px;
+          height: 2311px;
+          position: relative;
+        }
+        
+        .desktop .overlap-group {
+          position: absolute;
+          width: 1314px;
+          height: 332px;
+          top: 535px;
+          left: 97px;
+          background-color: #436c92;
+          border-radius: 15px;
+          box-shadow: 2px 2px 2px #00000040;
+        }
+        
+        .desktop .an-HSA-allows {
+          position: absolute;
+          width: 1138px;
+          top: 190px;
+          left: 88px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 23px;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .text-wrapper {
+          position: absolute;
+          width: 1014px;
+          top: 62px;
+          left: 88px;
+          font-family: "Inter", Helvetica;
+          font-weight: 700;
+          color: #ffffff;
+          font-size: 35px;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .navbar {
+          position: absolute;
+          width: 1508px;
+          height: 139px;
+          top: 0;
+          left: 0;
+          background-color: #142433;
+        }
+        
+        .desktop .text-wrapper-2 {
+          position: absolute;
+          width: 194px;
+          top: 46px;
+          left: 143px;
+          font-family: "Inter", Helvetica;
+          font-weight: 600;
+          color: #ffffff;
+          font-size: 35px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-3 {
+          position: absolute;
+          width: 94px;
+          top: 54px;
+          left: 807px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 25px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-4 {
+          position: absolute;
+          width: 137px;
+          top: 54px;
+          left: 931px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 25px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-5 {
+          position: absolute;
+          width: 148px;
+          top: 54px;
+          left: 1098px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 25px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-6 {
+          position: absolute;
+          width: 166px;
+          top: 54px;
+          left: 1276px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #ffffff;
+          font-size: 25px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .p {
+          position: absolute;
+          width: 1242px;
+          top: 269px;
+          left: 133px;
+          font-family: "Poppins", Helvetica;
+          font-weight: 700;
+          color: #000000;
+          font-size: 50px;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .footer {
+          position: absolute;
+          width: 1508px;
+          height: 123px;
+          top: 2188px;
+          left: 0;
+          background-color: #142433;
+        }
+        
+        .desktop .frame {
+          position: relative;
+          width: 745px;
+          height: 34px;
+          top: 45px;
+          left: 382px;
+        }
+        
+        .desktop .text-wrapper-7 {
+          position: absolute;
+          width: 745px;
+          top: 2px;
+          left: 0;
+          font-family: "Inter", Helvetica;
+          font-weight: 600;
+          color: #ffffff;
+          font-size: 24px;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .the-HSA-is-owned-by {
+          position: absolute;
+          width: 1209px;
+          top: 997px;
+          left: 150px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #000000;
+          font-size: 28px;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .note {
+          position: absolute;
+          width: 1283px;
+          height: 164px;
+          top: 1222px;
+          left: 113px;
+          background-color: #f5f5f5;
+          border-radius: 15px;
+          box-shadow: 2px 2px 2px #00000040;
+        }
+        
+        .desktop .please-note-that {
+          position: absolute;
+          width: 1167px;
+          top: 47px;
+          left: 58px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #000000;
+          font-size: 20px;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .text-wrapper-8 {
+          position: absolute;
+          width: 925px;
+          top: 1532px;
+          left: 290px;
+          font-family: "Inter", Helvetica;
+          font-weight: 700;
+          color: #000000;
+          font-size: 40px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-9 {
+          position: absolute;
+          width: 730px;
+          top: 1650px;
+          left: 389px;
+          font-family: "Inter", Helvetica;
+          font-weight: 600;
+          color: #000000;
+          font-size: 24px;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+        .desktop .frame-wrapper {
+          position: absolute;
+          width: 601px;
+          height: 151px;
+          top: 1758px;
+          left: 454px;
+          background-color: #f5f5f5;
+          border-radius: 15px;
+          box-shadow: 1px 1px 2px #00000040;
+        }
+        
+        .desktop .frame-2 {
+          position: relative;
+          width: 495px;
+          height: 100px;
+          top: 26px;
+          left: 41px;
+        }
+        
+        .desktop .text-wrapper-10 {
+          position: absolute;
+          width: 76px;
+          top: 14px;
+          left: 10px;
+          font-family: "Inter", Helvetica;
+          font-weight: 700;
+          color: #000000;
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .line {
+          left: 107px;
+          position: absolute;
+          width: 1px;
+          height: 100px;
+          top: -5px;
+          object-fit: cover;
+        }
+        
+        .desktop .line-2 {
+          left: 213px;
+          position: absolute;
+          width: 1px;
+          height: 100px;
+          top: -5px;
+          object-fit: cover;
+        }
+        
+        .desktop .text-wrapper-11 {
+          position: absolute;
+          width: 256px;
+          top: 12px;
+          left: 242px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #000000;
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-12 {
+          position: absolute;
+          width: 52px;
+          top: 16px;
+          left: 136px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #000000;
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-13 {
+          position: absolute;
+          width: 263px;
+          top: 71px;
+          left: 242px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #000000;
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-14 {
+          position: absolute;
+          width: 55px;
+          top: 75px;
+          left: 136px;
+          font-family: "Inter", Helvetica;
+          font-weight: 500;
+          color: #000000;
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .text-wrapper-15 {
+          position: absolute;
+          width: 49px;
+          top: 73px;
+          left: 10px;
+          font-family: "Inter", Helvetica;
+          font-weight: 700;
+          color: #000000;
+          font-size: 15px;
+          letter-spacing: 0;
+          line-height: normal;
+          white-space: nowrap;
+        }
+        
+        .desktop .if-you-are-age-wrapper {
+          position: absolute;
+          width: 554px;
+          height: 61px;
+          top: 2014px;
+          left: 495px;
+        }
+        
+        .desktop .if-you-are-age {
+          position: absolute;
+          width: 550px;
+          top: 0;
+          left: 4px;
+          font-family: "Inter", Helvetica;
+          font-weight: 600;
+          color: #000000;
+          font-size: 24px;
+          text-align: center;
+          letter-spacing: 0;
+          line-height: normal;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <div class="desktop">
+        <div class="div">
+            <div class="overlap-group">
+                <p class="an-HSA-allows"> An HSA allows employees to set aside pre-tax money to pay for eligible medical and prescription drug expenses. If you don&#39;t need to use the funds immediately,you can maintain your account <br />for years to come. </p>
+                <p class="text-wrapper"> A Health Savings Account (HSA) is available to employees enrolled in a High-Deductible Health Plan (HDHP) </p>
+            </div>
+            <div class="navbar">
+                <div class="text-wrapper-2">HealthCare</div>
+                <div class="text-wrapper-3">Home</div>
+                <div class="text-wrapper-4">About Us</div>
+                <div class="text-wrapper-5">Resources</div>
+                <div class="text-wrapper-6">Contact Us</div>
+            </div>
+            <p class="p">You are eligible for an HSA if you are enrolling in the Aetna Core Plan.</p>
+            <footer class="footer">
+                <div class="frame">
+                    <p class="text-wrapper-7">Please contact Benefits section for additional plan information.</p>
+                </div>
+            </footer>
+            <p class="the-HSA-is-owned-by"> The HSA is owned by you. Unused funds accumulate over time and roll over from year to year; there are no &#34;use-it-or-lose-it&#34; rules. Since the HSA is your account, you keep<br /> the money if you choose a new health plan, when you retire, or if you leave. </p>
+            <div class="note">
+                <p class="please-note-that"> Please note that participation in the HSA Plan excludes you from participating in the general-purpose Health Care Flexible Spending Account Plan (FSA). You may participate in the Limited-Purpose Health Care FSA which covers eligible <br />dental and vision expenses. </p>
+            </div>
+            <p class="text-wrapper-8">To enroll, please designate an election amount.</p>
+            <p class="text-wrapper-9">The IRS maximum annual contribution amounts are as follows:</p>
+            <div class="frame-wrapper">
+                <div class="frame-2">
+                    <div class="text-wrapper-10">Individual</div>
+                    <hr class="line" style="width: 1px; height: 100px; background: rgba(0, 0, 0, 0.20);" />
+                    <hr class="line-2" style="width: 1px; height: 100px; background: rgba(0, 0, 0, 0.20);" />
+                    <p class="text-wrapper-11">Xyz Contributes 500$ towards this.</p>
+                    <div class="text-wrapper-12">$4,150</div>
+                    <p class="text-wrapper-13">Xyz Contributes 1000$ towards this.</p>
+                    <div class="text-wrapper-14">$8,300</div>
+                    <div class="text-wrapper-15">Family</div>
+                </div>
+            </div>
+            <div class="if-you-are-age-wrapper">
+                <p class="if-you-are-age">If you are age 55+: $1,000 additional &#34;catch up&#34; contribution</p>
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
