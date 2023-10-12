@@ -1,4 +1,32 @@
-.desktop {
+<!DOCTYPE html>
+<html>
+  <head>
+    <!-- Global.css -->
+    <style>
+              @import url("https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css");
+        * {
+          -webkit-font-smoothing: antialiased;
+          box-sizing: border-box;
+        }
+        html,
+        body {
+          margin: 0px;
+          height: 100%;
+        }
+        /* a blue color as a generic focus style */
+        button:focus-visible {
+          outline: 2px solid #4a90e2 !important;
+          outline: -webkit-focus-ring-color auto 5px !important;
+        }
+        a {
+          text-decoration: none;
+        }
+        @import url("https://fonts.googleapis.com/css?family=Inter:800,500,700,600");
+
+    </style>
+    <!-- style.css -->
+    <style>
+      .desktop {
   background-color: #fcfcfc;
   display: flex;
   flex-direction: row;
@@ -8,6 +36,8 @@
 
 .desktop .div {
   background-color: #fcfcfc;
+  border: 0.5px solid;
+  border-color: #000000;
   width: 1508px;
   height: 2501px;
   position: relative;
@@ -107,7 +137,8 @@
   top: 139px;
   left: 0;
   background-image: url(./img/rectangle-2.svg);
-  background-size: 100% 100%;
+  background-size: cover;
+  background-position: 50% 50%;
 }
 
 .desktop .p {
@@ -440,3 +471,76 @@
   letter-spacing: 0;
   line-height: normal;
 }
+
+    </style>
+    <!-- <link rel="stylesheet" href="globals.css" /> -->
+    <!-- <link rel="stylesheet" href="style.css" /> -->
+  </head>
+  <body>
+    <div class="desktop">
+      <div class="div">
+        <div class="navbar">
+          <div class="text-wrapper">HealthCare</div>
+          <div class="text-wrapper-2">Home</div>
+          <div class="text-wrapper-3">About Us</div>
+          <div class="text-wrapper-4">Resources</div>
+          <div class="text-wrapper-5">Contact Us</div>
+          <img class="carbon-health-cross" src="https://cstechwork.in/test/img/carbon-health-cross.svg" />
+        </div>
+        <div class="frame">
+          <p class="p">You are eligible for an HSA if you are enrolling in the Aetna Core Plan.</p>
+        </div>
+        <div class="heading">
+          <p class="an-HSA-allows">
+            An HSA allows employees to set aside pre-tax money to pay for eligible medical and prescription drug
+            expenses. If you don&#39;t need to use the funds immediately,you can maintain your account <br />for years
+            to come.
+          </p>
+          <p class="text-wrapper-6">
+            A Health Savings Account (HSA) is available to employees enrolled in a High-Deductible Health Plan (HDHP)
+          </p>
+        </div>
+        <div class="money">
+          <p class="the-HSA-is-owned-by">
+            The HSA is owned by you. Unused funds accumulate over time and roll over from year to year; there are no
+            &#34;use-it-or-lose-it&#34; rules. Since the HSA is your account, you keep the money if you choose a new
+            health <br />plan, when you retire, or if you leave.
+          </p>
+          <img class="unsplash" src="https://cstechwork.in/test/img/unsplash-1zo4o3z0uja.png" />
+        </div>
+        <div class="note">
+          <img class="typcn-info-outline" src="https://cstechwork.in/test/img/typcn-info-outline-1.svg" />
+          <p class="please-note-that">
+            Please note that participation in the HSA Plan excludes you from participating in the general-purpose Health
+            Care Flexible Spending Account Plan (FSA). You may participate in the Limited-Purpose Health Care FSA which
+            covers eligible <br />dental and vision expenses.
+          </p>
+        </div>
+        <div class="election-amount">
+          <img class="img" src="https://cstechwork.in/test/img/typcn-info-outline.svg" />
+          <p class="text-wrapper-7">To enroll, please designate an election amount.</p>
+          <p class="text-wrapper-8">The IRS maximum annual contribution amounts are as follows:</p>
+          <div class="frame-wrapper">
+            <div class="frame-2">
+              <div class="text-wrapper-9">Individual</div>
+              <img class="line" src="https://cstechwork.in/test/img/line-2.svg" />
+              <img class="line-2" src="https://cstechwork.in/test/img/line-2.svg" />
+              <p class="text-wrapper-10">Xyz Contributes 500$ towards this.</p>
+              <div class="text-wrapper-11">$4,150</div>
+              <p class="text-wrapper-12">Xyz Contributes 1000$ towards this.</p>
+              <div class="text-wrapper-13">$8,300</div>
+              <div class="text-wrapper-14">Family</div>
+            </div>
+          </div>
+          <p class="if-you-are-age">If you are age 55+: $1,000 additional &#34;catch up&#34; contribution</p>
+        </div>
+        <footer class="footer">
+          <div class="frame-3">
+            <img class="ic-baseline-phone" src="https://cstechwork.in/test/img/ic-baseline-phone.svg" />
+            <p class="text-wrapper-15">Please contact Benefits section for additional plan information.</p>
+          </div>
+        </footer>
+      </div>
+    </div>
+  </body>
+</html>
